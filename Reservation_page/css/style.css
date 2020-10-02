@@ -1,0 +1,605 @@
+*,*:before,*:after{
+padding: 0;
+border: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+.wrapper{
+width: 1300px;
+}
+.container{
+width: 100%;
+height:90px;
+}
+a{
+text-decoration: none;
+}
+
+/*HEADER*/
+header{
+position: relative;
+z-index: 6;
+width: 100%;
+}
+.header{
+width:100%;
+max-width: 1350px;
+height: 90px;
+margin-top: -6px;
+display: flex;
+justify-content: space-between;
+position: fixed;
+background-color: #fff;
+border-bottom: 1px solid rgba(0,0,0,0.7);
+z-index: 10;
+}
+
+.header.sticky{
+height: 70px;
+}
+
+.header_title{
+width: 20%;
+margin-left: 30px;
+}
+.title_img.sticky{
+width:160px;
+height: 62px;
+}
+.book.sticky{
+transform:scale(0.9,0.9);
+position: absolute;
+top: -6px;
+left: 1080px;
+}
+
+/*menu*/
+.menu_list{
+width: 35%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.menu_items{
+transition: .5s ease;
+}
+.reserv{
+display: none;
+}
+.menu_items a{
+  font-weight: 700;
+  letter-spacing: 2px;
+text-decoration: none;
+font-weight:700;
+font-size: 14px;
+text-transform: uppercase;
+color:#586977;
+}
+.menu_items a:hover{
+color: #cf3669;
+}
+/*shopbasket*/
+.shopping{
+width: 4%;
+position: relative;
+
+}
+.shop.sticky{
+width: 30px;
+height: 20px;
+margin-top: 25px;
+}
+.shopping img{
+margin-top: 28px;
+}
+
+.shop_arrow:after{
+content: "";
+position: absolute;
+top:42px;
+left:32px;
+width:0;
+height:0;
+border-top:4px solid #000;
+border-right: 4px solid transparent;
+border-left: 4px solid transparent;
+
+}
+/*Button_booking*/
+.booking img{
+margin-top: 20px;
+}
+.booking.sticky{
+transform:scale(0.9,0.9);
+position: relative;
+top: -8px;
+left: 0;
+}
+
+.back_menu{
+width: 100%;
+height: 100px;
+position: absolute;
+top:-100%;
+left:0;
+}
+
+/*Menu_burger*/
+@media (max-device-width:667px){
+.menu_burger{
+width: 45px;
+height: 90px;
+position: absolute;
+top: -8px;
+right: 20px;
+}
+.header{
+width:100%;
+height: 80px;
+}
+.header.sticky{
+height: 70px;
+}
+.header_title img{
+height: 78px;
+}
+
+.burger_items{
+width: 35px;
+height: 3px;
+position: relative;
+top: 45px;
+left: -30px;
+z-index: 3;
+}
+.burger{
+width: 65px;
+height: 5px;
+background-color: #7b8c98;
+}
+.burger.active{
+display: none;
+}
+.burger_items.active{
+top: 80px;
+}
+.burger_items:before{
+content: "";
+position: absolute;
+width: 65px;
+height: 5px;
+background-color: #7b8c98;
+top: -18px;
+left: 0;
+transition: all .5s ease;
+}
+.burger_items.active:before{
+width: 65px;
+top: -12px;
+transform: rotate(-45deg);
+background-color: #fff;
+}
+.burger_items:after{
+content: "";
+position: absolute;
+width: 65px;
+height: 5px;
+background-color: #7b8c98;
+top: 18px;
+left: 0;
+transition: all .5s ease;
+}
+.burger_items.active:after{
+width: 65px;
+transform: rotate(45deg);
+top: -10px;
+background-color: #fff;
+}
+.menu_list,.booking,.shopping{
+display: none;
+}
+.back_menu.active{
+width: 100%;
+min-width: 1350px;
+height:1500px;
+background-color: #373844;
+position: absolute;
+top:-20%;
+transition: all .8s ease;
+}
+.menu_list.active{
+display:block;
+position:relative;
+width: 100%;
+height: 100%;
+margin: 0 auto;
+z-index: 3;
+text-align: center;
+transition: all 3s ease;
+
+}
+.menu_items{
+margin-top: 150px;
+width:100%;
+margin-left: -140px;
+text-align: center;
+}
+
+.reserv{
+display: block;
+}
+.menu_items a{
+  font-family: 'Pompiere', cursive;
+font-size: 35px;
+color: #fff;
+letter-spacing: 6px;
+text-align: center;
+}
+
+
+.booking img{
+width: 250px;
+height: 60px;
+}
+.shop.sticky{
+display: block;
+position: relative;
+top: 0;
+left:-80px;
+z-index: 3;
+}
+.shopping img{
+width:55px;
+height: 40px;
+}
+.shop_arrow:after{
+left:60px;
+}
+.shop_arrow.active{
+display: none;
+}
+}
+
+main{
+width: 100%;
+height: auto;
+min-width: 1349px;
+}
+/*RESERVATION_TABLE*/
+.reservation{
+width: 100%;
+height: 560px;
+background-color:#edf1f3;
+padding-top: 70px;
+}
+.reservation_table{
+width: 1170px;
+height: 500px;
+margin: 0 auto;
+}
+.reservation_table>h1{
+text-align: center;
+word-spacing: 4px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.reserve_inner{
+display: flex;
+}
+.reserve_items1 img{
+width: 500px;
+height: 300px;
+}
+.reserve_items2{
+padding-left: 50px;
+padding-top: 20px;
+width: 800px;
+height: 200px;
+display: flex;
+position: relative;
+}
+.reserve_user{
+width: 300px;
+height:50%;
+}
+.users{
+width: 80%;
+height: 40px;
+border-bottom: 1px solid #c7d1d6;
+position: relative;
+}
+.users input{
+width: 100%;
+height: 40px;
+background-color:#edf1f3;
+outline: none;
+}
+.reserve_icons{
+position: absolute;
+top:12px;
+left: 210px;
+}
+.reserve_inform{
+width:550px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: absolute;
+top: 200px;
+left: 30px;
+}
+.inform_items_button{
+width: 200px;
+height: 50px;
+border-radius: 5px;
+background-color: #fea100;
+color: #fff;
+text-transform: uppercase;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 1s ease;
+}
+.inform_items_button:hover{
+transform: translate3d(0,3px,-3px) scale(0.95, 0.95);
+box-shadow: 4px 6px 6px rgba(0,0,0,0.5);
+}
+.inform_items>h3,h4{
+font-size: 12px;
+text-transform: uppercase;
+}
+.inform_items>h4{
+color: #cf3669;
+}
+@media(max-device-width:667px){
+.reservation{
+height: 570px;
+}
+.reserve_inner{
+width: 1200px;
+}
+.users input{
+width: 350px;
+height: 60px;
+font-size: 21px;
+margin-left: 30px;
+}
+.reserve_inform{
+width: 680px;
+}
+.reserve_icons{
+position: absolute;
+top:22px;
+left: 240px;
+}
+.reserve_icons img{
+width: 25px;
+height: 25px;
+}
+.inform_items_button{
+width: 150px;
+height: 60px;
+font-size: 20px;
+text-align: center;
+}
+.inform_items h3,h4{
+font-size: 20px;
+margin-left: 30px;
+}
+
+}
+
+/*OPENING HOURS*/
+.opening{
+height: 150px;
+width: 1170px;
+margin:0 auto;
+display: flex;
+}
+.opening_text{
+font-size: 28px;
+font-weight: 700;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 250px 0 100px;
+
+}
+.working_hours>p{
+font-size:20px;
+font-style: italic;
+color: #5c6369;
+padding-bottom: 10px;
+}
+.working_hours>h3{
+font-size:25px;
+font-weight: 700;
+color: #fea100;
+}
+.working_hours{
+width: 250px;
+padding: 50px 20px 50px 20px;
+}
+
+/*FOOTER*/
+.footer{
+width: 100%;
+min-width: 1350px;
+height: 360px;
+background-color: #373844;
+overflow: hidden;
+}
+
+.footer_container{
+width: 1100px;
+padding-top: 50px;
+margin:0 auto;
+display: flex;
+justify-content: space-between;
+}
+.footer_container h1{
+color: #fff;
+font-size: 28px;
+}
+nav{
+padding-top: 20px;
+color: #adb2b7;
+font-size: 20px;
+font-weight: 300;
+}
+nav a{
+color: #fff;
+}
+nav p{
+padding-top: 10px;
+}
+nav p:hover{
+color: #fea100;
+}
+
+.letter_title>p{
+padding-top: 10px;
+color: #adb2b7;
+font-size: 20px;
+}
+.email_address{
+padding-top:20px;
+display: flex;
+align-items: center;
+}
+.email{
+display: flex;
+width: 300px;
+}
+.email input{
+width:280px;
+height: 30px;
+border:1px solid #52535e;
+background-color: #373844;
+color: #fff;
+outline: none;
+}
+.email_button{
+width: 130px;
+height: 50px;
+border-radius: 5px;
+background-color: #fea100;
+color: #fff;
+text-transform: uppercase;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 1s ease;
+}
+.email_button:hover{
+transform: translate3d(0,3px,-3px) scale(0.95, 0.95);
+box-shadow: 4px 6px 6px rgba(0,0,0,0.5);
+}
+.sociaty{
+display: flex;
+}
+.sociaty_items{
+padding-top: 30px;
+padding-left: 10px;
+}
+.sociaty_link{
+width: 55px;
+height: 50px;
+border-radius:5px;
+transition: all 1s ease;
+}
+.sociaty_items img:hover{
+box-shadow: 4px 6px 6px rgba(0,0,0,0.5);
+}
+.apps_items{
+padding-top: 20px;
+}
+.apps_items img{
+border-radius: 12px;
+}
+@media(max-device-width:667px){
+.footer{
+height: auto;
+}
+.footer_container{
+flex-direction: column;
+}
+.navigation {
+display: none;
+}
+.letter h1{
+font-size: 35px;
+text-align: center;
+}
+.letter_title{
+padding-top: 50px;
+}
+.letter_title>p{
+font-size: 30px;
+color: #fff;
+text-align: center;
+letter-spacing: 2.4px;
+}
+.email_address{
+margin-top: 40px;
+margin-left: 250px;
+}
+.email_address input{
+width: 350px;
+height: 80px;
+font-size: 25px;
+}
+.email_button{
+margin-left: 80px;
+width: 180px;
+height: 60px;
+font-size: 25px;
+}
+
+.sociaty_items{
+display: inline-block;
+padding-top: 50px;
+margin-left: 50px;
+}
+.sociaty{
+margin-left: 270px;
+}
+.sociaty_link{
+width: 100px;
+height: 100px;
+}
+.apps{
+margin: 0 auto;
+text-align: center;
+margin-top: 100px;
+margin-bottom: 50px;
+}
+.apps h1{
+font-size: 35px;
+}
+.apps_items{
+display: inline-block;
+}
+.atmosphere{
+height: 500px;
+}
+.atmosphere p{
+font-size: 22px;
+}
+.atmosphere h4{
+font-size: 24px;
+}
+.atmosphere img{
+margin-top: 80px;
+}
+.about_us p{
+font-size: 22px;
+}
+video{
+margin-top: 30px;
+}
+}

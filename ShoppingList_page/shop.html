@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/ion.rangeSlider.css"/>
+	<title>Shopping List</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+        <!--header block-->
+      <div class="header">
+        <div class="header_title">
+          <img class="title_img" src="images/title.jpg" alt=""/>
+        </div>
+        <div class="menu_list">
+            <div class="menu_items"><a href="../Home_page/index.html" target="_blank">Home</a></div>
+            <div class="menu_items"><a href="../Menu_page/menu.html" target="_blank">Menu</a></div>
+            <div class="menu_items"><a href="../ShoppingList_page/shop.html" target="_blank">Recipe</a></div>
+            <div class="menu_items reserv"><a href="../Reservation_page/reserve.html" target="_blank">Reservation</a></div>
+            <div class="menu_items"><a href="#contact">Contact</a></div>
+        </div>
+        <div class="shopping">
+            <a href="#"><div class="shop_arrow"><img  class="shop" src="images/shopcenter.png" alt=""/></div></a>
+        </div>
+        <div class="booking">
+            <a href="../Reservation_page/reserve.html" target="_blank"><img  class="book" src="images/button_header.jpg" alt=""/></a>
+        </div>
+          <div class="menu_burger">
+            <div class="burger_items">
+              <div class="burger"></div>
+            </div>
+          </div>
+          <div class="back_menu"></div>
+      </div>
+    </header>
+		<main>
+			<!--Title section-->
+			<div class="container">
+				<div class="menu_container">
+					<h1>Shop Listing</h1>	
+				</div>
+			</div>
+
+      		 <div class="shops">
+				<div class="changing">
+					<!--Food category section-->
+					<h2 class="category">Food Category</h2>
+					<div class="changing_inner">
+					<div class="category_foods breakfast">
+						<div class="category_items">
+							<img src="images/icon.png" alt="">
+							<h4>Breakfast</h4>
+						</div>
+					</div>
+					<div class="category_foods lunch" >
+						<div class="category_items">
+							<img src="images/icon.png" alt="">
+							<h4>Lunch</h4>
+						</div>
+					</div>
+					<div class="category_foods snack">
+						<div class="category_items">
+							<img src="images/icon.png" alt="">
+							<h4>Snacks</h4>
+						</div>
+					</div>
+					<div class="category_foods soup">
+						<div class="category_items">
+							<img src="images/icon.png" alt="">
+							<h4>Soups</h4>
+						</div>
+					</div>
+					<div class="category_foods pizza">
+						<div class="category_items">
+							<img src="images/icon.png" alt="">
+							<h4>Pizza</h4>
+						</div>
+					</div>
+					<div class="category_foods dinner">
+						<div class="category_items">
+							<img src="images/icon.png" alt="">
+							<h4>Dinner</h4>
+						</div>
+					</div>
+				</div>
+			<div class="newsletter">
+				<div class="newsletter_inner">
+					<h4>Newsletter</h4>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<a href="#"><div class="address">Email Address
+					</div></a>
+					<a href="#"><div class="subscribe">Subscribe</div></a>
+				</div>
+			</div>
+		</div>
+		<div class="main_inform">
+			<div class="header_items">
+				<!--Sorting block-->
+				<div class="sorting_title">Sorting by:</div>
+				<div class="sort_block">
+					<div class="first"> --  -- 
+						<input  class="radiobuttons" type="radio" name='first'/>
+					</div>
+					<div class="sort up" id="sort-up">sort-up
+						<input  class="radiobuttons" type="radio" name='up'/>
+					</div>
+					<div class="sort down" id="sort-down">sort-down
+						<input  class="radiobuttons" type="radio" name='down'/>
+					</div>
+					<div class="sort rating" id="sort-rating">sort-rating
+						<input class="radiobuttons"  type="radio" name='rating'/>
+					</div>
+				</div>
+			</div>
+
+			<!--Main restaurant dishes section-->
+			<div class="main_list" id="main_list">
+			 	<div class="food_items breakf" data-price="20" data-rating="5">
+			 		<div class="basket">
+			 			<a href="#"><img src="images/basket.png" alt=""/></a>
+			 			</div>
+			 		<div class="stars_block">
+			 			<h5>5.0</h5>
+			 			<img src="images/stars.png" alt=""/>
+				  	 	</div>
+				   	<div class="food_inner">
+				   		<div class="food_img">
+							<img src="images/flakes.jpg" class="image" alt=""/>
+						</div>
+						<h5>Simple and chocolate flakes</h5>
+						<div class="price"><span>$</span><p>20.00</p></div>
+					</div>
+				</div>	
+
+				<div class="food_items soup" data-price="32" data-rating="4.2">
+					<div class="basket">
+						<a href="#"><img src="images/basket.png" alt=""/></a>
+						</div>
+					<div class="stars_block">
+						<h5>4.2</h5>
+						<img src="images/stars.png" alt=""/>
+						</div>
+					<div class="food_inner">
+						<div class="food_img">
+					  	<img src="images/chealsoup.jpg" class="image" alt=""/>
+						</div>
+						<h5>Chile soup con carne</h5>
+						<div class="price"><span>$</span><p>32.00</p></div>
+					</div>
+				</div>	
+
+			<div class="food_items snack" data-price="28" data-rating="4">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					   <img src="images/mexicansalad.jpg" class="image" alt=""/>
+					</div>
+					<h5>Mexican Salad</h5>
+					<div class="price"><span>$</span><p>28.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items lunch" data-price="24" data-rating="4">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/chicken-quesadillas.jpg" class="image" alt=""/>
+					</div>
+					<h5>Quesadilla lunch with chicken</h5>
+					<div class="price"><span>$</span><p>24.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items breakf" data-price="20" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/croissant.png" class="image" alt=""/>
+					</div>
+					<h5>Delicious croutons</h5>
+					<div class="price"><span>$</span><p>20.00</p></div>
+				</div>
+			</div>	
+	
+	         <div class="food_items lunch" data-price="30" data-rating="4">
+	         		<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+	         		<div class="stars_block">
+					<h5>4.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					<img src="images/shokoladnyi-muss.jpg" class="image" alt=""/>
+					</div>
+					<h5>Chocolate mousse</h5>
+					<div class="price"><span>$</span><p>30.00</p></div>
+				</div>
+			</div>	
+	
+	          <div class="food_items lunch" data-price="15" data-rating="4">
+	          	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+	          	<div class="stars_block">
+					<h5>4.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Cheesecake.jpg" class="image" alt=""/>
+					</div>
+					<h5>Cheesecaken</h5>
+					<div class="price"><span>$</span><p>15.00</p></div>
+				</div>
+			</div>	
+	
+	         <div class="food_items breakf" data-price="22" data-rating="4.5">
+	         		<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+	         		<div class="stars_block">
+					<h5>4.5</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/apple-pie.jpg" class="image" alt=""/>
+					</div>
+					<h5>Apple pie</h5>
+					<div class="price"><span>$</span><p>22.00</p></div>
+				</div>
+			</div>	
+	
+	        <div class="food_items dinner" data-price="48" data-rating="4">
+	        		<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+	        		<div class="stars_block">
+					<h5>4.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/Pearrisoto.jpg" class="image" alt="pr"/>
+					</div>
+					<h5>Pear risotto</h5>
+					<div class="price"><span>$</span><p>48.00</p></div>
+				</div>
+			</div>	
+	
+	         <div class="food_items dinner" data-price="65" data-rating="4.3">
+	         		<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+	         		<div class="stars_block">
+					<h5>4.3</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/tunacarpaccio.jpg" class="image" alt=""/>
+					</div>
+					<h5>Tuna  carpaccio</h5>
+					<div class="price"><span>$</span><p>65.00</p></div>
+				</div>
+			</div>	
+	
+	        <div class="food_items dinner" data-price="70" data-rating="5">
+	        		<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+	        		<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/asparaguss.jpg" class="image" alt=""/>
+					</div>
+					<h5>A warm appetizer of asparagus</h5>
+					<div class="price"><span>$</span><p>70.00</p></div>
+				</div>
+			</div>
+
+			 <div class="food_items snack" data-price="62" data-rating="4">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>4.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/tempura.jpg" class="image" alt=""/>
+					</div>
+					<h5>Tempura with vegetables</h5>
+					<div class="price"><span>$</span><p>62.00</p></div>
+				</div>
+			</div>	
+
+			 <div class="food_items dinner" data-price="120" data-rating="4.8">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>4.8</h5>
+					<img src="images/stars.png" alt=""/>
+				</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Antipasto.jpg" class="image" alt=""/>
+					</div>
+					<h5>Antipasto with octopuses</h5>
+					<div class="price"><span>$</span><p>120.00</p></div>
+				</div>
+			</div>	
+
+			 <div class="food_items dinner" data-price="99" data-rating="5">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/goose.jpg" class="image" alt=""/>
+					</div>
+					<h5>Goose liver with cherry sauce</h5>
+					<div class="price"><span>$</span><p>99.00</p></div>
+				</div>
+			</div>	
+
+			 <div class="food_items soup" data-price="80" data-rating="4.1">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>4.1</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/Minestrone-Soup_036.jpg" class="image" alt=""/>
+					</div>
+					<h5>Minestrone</h5>
+					<div class="price"><span>$</span><p>80.00</p></div>
+				</div>
+			</div>	
+
+			 <div class="food_items soup" data-price="65" data-rating="4">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>4.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/stone.jpg" class="image" alt=""/>
+					</div>
+					<h5>Sopa de Pedro (Stone Soup)</h5>
+					<div class="price"><span>$</span><p>65.00</p></div>
+				</div>
+			</div>
+
+			 <div class="food_items pizza" data-price="65" data-rating="4">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>4.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/FourSeasons.jpg" class="image" alt=""/>
+					</div>
+					<h5>Four Seasons Pizza</h5>
+					<div class="price"><span>$</span><p>65.00</p></div>
+				</div>
+			</div>
+
+			 <div class="food_items pizza" data-price="62" data-rating="5">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/hawaiipizza.jpg" class="image" alt=""/>
+					</div>
+					<h5>Hawaiian pizza</h5>
+					<div class="price"><span>$</span><p>62.00</p></div>
+				</div>
+			</div>
+
+			 <div class="food_items pizza" data-price="58" data-rating="4.2">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>4.2</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/caprichoza.jpg" class="image" alt=""/>
+					</div>
+					<h5>Capricciosa pizza</h5>
+					<div class="price"><span>$</span><p>58.00</p></div>
+				</div>
+			</div>
+
+			 <div class="food_items pizza" data-price="70" data-rating="4.4">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>4.4</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/calcone.jpg" class="image" alt=""/>
+					</div>
+					<h5>Calzone pizza</h5>
+					<div class="price"><span>$</span><p>70.00</p></div>
+				</div>
+			</div>	
+
+			 <div class="food_items pizza" data-price="74" data-rating="4.7">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>4.7</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					  <img src="images/diaobla.jpg" class="image" alt=""/>
+					</div>
+					<h5>Diablo pizza</h5>
+					<div class="price"><span>$</span><p>74.00</p></div>
+				</div>
+			</div>
+
+			 <div class="food_items pizza" data-price="56" data-rating="5">
+			 	<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+			 	<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/po-neapolitian.jpg" class="image" alt=""/>
+					</div>
+					<h5>Pizza is Neapolitan</h5>
+					<div class="price"><span>$</span><p>56.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items pizza" data-price="60" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					<img src="images/fourcheese.jpg" class="image" alt=""/>
+					</div>
+					<h5>Four Cheese Pizza</h5>
+					<div class="price"><span>$</span><p>60.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items lunch" data-price="39" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Lemonpie.jpg" class="image" alt=""/>
+					</div>
+					<h5>Lemon meringue pie</h5>
+					<div class="price"><span>$</span><p>39.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items snack" data-price="50" data-rating="4.2">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.2</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/fruitsalad.jpg" class="image" alt=""/>
+					</div>
+					<h5>Ultimate organic fruit salad</h5>
+					<div class="price"><span>$</span><p>50.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items breakf" data-price="26" data-rating="4.8">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.8</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Porridge.jpg" class="image" alt=""/>
+					</div>
+					<h5>Porridge</h5>
+					<div class="price"><span>$</span><p>26.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items breakf" data-price="25" data-rating="4">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					<img src="images/eggs.jpg" class="image" alt=""/>
+					</div>
+					<h5>Scrambled eggs with bacon</h5>
+					<div class="price"><span>$</span><p>25.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items snack" data-price="40" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Sandwich.png" class="image" alt=""/>
+					</div>
+					<h5>Sandwich with boiled corned beef</h5>
+					<div class="price"><span>$</span><p>40.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items soup" data-price="50" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Ramen.jpg" class="image" alt=""/>
+					</div>
+					<h5>Ramen soup</h5>
+					<div class="price"><span>$</span><p>50.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items lunch" data-price="40" data-rating="4.3">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.3</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/baked.jpg" class="image" alt=""/>
+					</div>
+					<h5>Baked goat cheese with lettuce</h5>
+					<div class="price"><span>$</span><p>40.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items soup" data-price="110" data-rating="4.3">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.3</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Soup.jpg" class="image" alt=""/>
+					</div>
+					<h5>Soup with ribs</h5>
+					<div class="price"><span>$</span><p>110.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items dinner" data-price="95" data-rating="4.9">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.9</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Black.jpg" class="image" alt=""/>
+					</div>
+					<h5>Black cod with miso pastee</h5>
+					<div class="price"><span>$</span><p>95.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items dinner" data-price="100" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Sorrel.jpg" class="image" alt=""/>
+					</div>
+					<h5>Sorrel salmon (semi-raw salmon)</h5>
+					<div class="price"><span>$</span><p>100.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items dinner" data-price="80" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/ravioli.jpg" class="image" alt=""/>
+					</div>
+					<h5>Ravioli with foie gras and truffle</h5>
+					<div class="price"><span>$</span><p>80.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items dinner" data-price="140" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/oyster.jpg" class="image" alt=""/>
+					</div>
+					<h5>Tagliatelle with oysters</h5>
+					<div class="price"><span>$</span><p>140.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items snack" data-price="64" data-rating="4.6">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.6</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Stuffed.jpg" class="image" alt=""/>
+					</div>
+					<h5>Stuffed squid with mix salad</h5>
+					<div class="price"><span>$</span><p>64.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items dinner" data-price="95" data-rating="4.2">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.2</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/cabbagefeat.jpg" class="image" alt=""/>
+					</div>
+					<h5>Duck breast with roasted cabbage</h5>
+					<div class="price"><span>$</span><p>95.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items dinner" data-price="110" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Salmon.jpg" class="image" alt=""/>
+					</div>
+					<h5>Salmon baked with sesam</h5>
+					<div class="price"><span>$</span><p>110.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items soup" data-price="82" data-rating="4.8">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.8</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/yaki.jpg" class="image" alt=""/>
+					</div>
+					<h5>Noodles a la Udon</h5>
+					<div class="price"><span>$</span><p>82.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items dinner" data-price="85" data-rating="4.1">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>4.1</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/One.jpg" class="image" alt=""/>
+					</div>
+					<h5>Baked drumstick with eggplant</h5>
+					<div class="price"><span>$</span><p>85.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items dinner" data-price="152" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/Spaghetti.jpg" class="image" alt=""/>
+					</div>
+					<h5>Spaghetti with mullet and seafood</h5>
+					<div class="price"><span>$</span><p>152.00</p></div>
+				</div>
+			</div>
+
+			<div class="food_items breakf" data-price="20" data-rating="5">
+				<div class="basket">
+					<a href="#"><img src="images/basket.png" alt=""/></a>
+					</div>
+				<div class="stars_block">
+					<h5>5.0</h5>
+					<img src="images/stars.png" alt=""/>
+					</div>
+				<div class="food_inner">
+					<div class="food_img">
+					 <img src="images/french.jpg" class="image" alt=""/>
+					</div>
+					<h5>Croissant in french</h5>
+					<div class="price"><span>$</span><p>20.00</p></div>
+				   </div>
+			     </div>		
+		  	 </div>
+	    	   </div>
+          </div>
+   </main>
+  
+         <!--Working hour -->
+		<div class="opening">
+			<div class="opening_text">Opening Hours</div>
+				<div class="working_hours">
+					<p>Monday to Friday</p>
+					<h3>10 am - 10 pm</h3>
+				</div>
+				<div class="working_hours">
+					<p>Saturday to Sunday</p>
+					<h3>9 am - 11 pm</h3>
+				</div>
+		</div>
+		  <!--Fotter-->
+			<div class="footer" id="contact">
+				<div class="footer_container">
+					<div class="navigation">
+						<h1>Navigation</h1>
+						<nav>
+							<a  class="fot_link" href="../Home_page/index.html" target="_blank"><p>Home</p></a>
+             					<a  class="fot_link" target="_blank" href="../About_page/about.html"><p>About us</p></a>
+              					<a  class="fot_link" href="../Menu_page/menu.html" target="_blank"><p>Menu</p></a>
+              					<a  class="fot_link"  href="../Reservation_page/reserve.html" target="_blank"><p>Reservation</p></a>
+              					<a  class="fot_link" href="../ShoppingList_page/shop.html" target="_blank"><p>Recipe</p></a>
+              					<a  class="fot_link" href="#contact"><p>Contact us</p></a>
+						</nav>
+					</div>
+					<div class="letter">
+						<h1>News letter</h1>
+						<div class="letter_title">
+							<p>Enter your email address and subscribe daily newsletter</p>
+							<div class="email_address">
+								<div class="email">
+								<img src="#" alt="">
+								<form>
+									<input type="text" placeholder="Email Address">
+								</form></div>
+								<a href="#"><div class="email_button">Subscribe</div></a>
+							</div>
+						</div>
+						<!--Social media buttons-->
+						<div class="sociaty">
+							<div class="sociaty_items">
+								<a href="#"><img  class="sociaty_link" src="images/facebook-icon.png" alt=""></a>
+							</div>
+							<div class="sociaty_items">
+								<a href="#"><img  class="sociaty_link" src="images/tvitter.png" alt=""></a>
+							</div>
+							<div class="sociaty_items">
+								<a href="#"><img class="sociaty_link" src="images/telegram.jpeg" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="apps">
+						<h1>Our app available</h1>
+						<div class="apps_items">
+							<a href="#"><img src="images/app1.png" alt=""></a>
+						</div>
+						<div class="apps_items">
+							<a href="#"><img src="images/app2.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/ion.rangeSlider.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
